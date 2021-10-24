@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>App Ghép Ảnh Nhóm</title>
+    <link rel="stylesheet" href="./asset/css/index.css">
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+</head>
+
+<body>
+    <h1>Gữi Tất ảnh vào đây</h1>
+    <div class="box-from">
+        <label>Chiều rộng hình ảnh</label>
+        <input type="text" class="canvasWidth" placeholder="Chiều rộng hình ảnh" value="100">
+        <label>chiều cao hình ảnh</label>
+        <input type="text" class="canvasHeight" placeholder="Chiều cao Hình ảnh" value="100">
+        <label>Chiều Rộng Hình ảnh ghép</label>
+        <input type="text" class="imageWidth" placeholder="Chiều Rộng Hình ảnh ghép" value="50">
+        <label>chiều cao Hình ảnh ghép</label>
+        <input type="text" class="imageHeight" placeholder="màu nền của hình ảnh" value="50">
+        <label>Màu Nền của hình ảnh (chọn up ảnh nền cùng được)</label>
+        <input type="text" class="image-background-color" placeholder="chiều cao Hình ảnh ghép" value="#000000">
+        <label>Up ảnh nền</label>
+        <input type="file" class="background-image">
+        <label>Độ dày đường viền</label>
+        <input type="text" class="border-lineCavans" value="1">
+        <label>Đường viền của hình ảnh</label>
+        <input type="text" class="image-lineCavans" placeholder="chiều cao Hình ảnh ghép" value="#000000">
+        <a href="https://webhangtot.com/bang-ma-mau-cmyk-rgb-html-css/" >Bấm vào trang này để lấy mã màu . và dùng ở #319318</a>
+        <div class="flex-image">
+            <input type="checkbox" class="checkbox">
+            <label for="">Đưa tất cả hình về px cụ thể</label>
+        </div>
+        <input type="file" class="image">
+        <button class="submit">Tạo ảnh</button>
+        <button class="newimage">Tạo ảnh mới</button>
+    </div>
+    <div id="canvas">
+
+    </div>
+    <script src="./asset/js/index.js">
+
+    </script>
+</body>
+
+</html>
